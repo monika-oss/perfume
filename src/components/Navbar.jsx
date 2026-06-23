@@ -32,12 +32,12 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-2 lg:gap-8">
             {navLinks.map((link, index) => (
               <a 
                 key={index} 
                 href={link.href}
-                className="relative text-slate-700 hover:text-brand-purple font-bold text-sm transition-all duration-300 group px-2 py-1 active:scale-95"
+                className="relative text-slate-700 hover:text-brand-purple font-bold text-[11px] lg:text-sm whitespace-nowrap transition-all duration-300 group px-1 lg:px-2 py-1 active:scale-95"
               >
                 {link.label}
                 <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-brand-purple to-brand-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
