@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f0ff;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7209b7, #ffb703);
+  border-radius: 10px;
+}
+
+@theme {
+  /* ---- Brand Colors (Light Purple + Gold) ---- */
+  --color-brand-purple-light: #9b5de5;
+  --color-brand-purple: #7209b7;
+  --color-brand-purple-dark: #480ca8;
+
+  --color-brand-gold-light: #ffe6a7;
+  --color-brand-gold: #ffb703;
+  --color-brand-gold-dark: #fb8500;
+
+  --color-brand-pink-light: #ffc8dd;
+  --color-brand-pink: #ffafcc;
+  --color-brand-pink-dark: #f15bb5;
+
+  /* ---- Typography ---- */
+  --font-sans: 'Lato', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-cinzel: 'Cinzel', serif;
+
+  /* ---- Gradients ---- */
+  --background-image-hero-gradient: linear-gradient(to right, #480ca8, #7209b7, #f15bb5);
+  --background-image-card-gradient: linear-gradient(135deg, #7209b7 0%, #480ca8 100%);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+@utility glassmorphism {
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(114, 9, 183, 0.1), 0 2px 8px rgba(0,0,0,0.06);
+}
+
+@utility glassmorphism-dark {
+  background-color: rgba(72, 12, 168, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(114, 9, 183, 0.15), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* ============================================
+   BLOB ANIMATION
+   ============================================ */
+@keyframes blob {
+  0%   { transform: translate(0px,   0px)  scale(1);    }
+  33%  { transform: translate(30px, -50px) scale(1.1);  }
+  66%  { transform: translate(-20px, 20px) scale(0.95); }
+  100% { transform: translate(0px,   0px)  scale(1);    }
+}
+.animate-blob { animation: blob 7s infinite; }
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
+
+/* ============================================
+   PRELOADER PARTICLE SYSTEM
+   ============================================ */
+@keyframes floatParticle {
+  0%   { transform: translateY(0px)   scale(1);   opacity: 0; }
+  20%  { opacity: 1; }
+  80%  { opacity: 0.8; }
+  100% { transform: translateY(-120px) scale(0.4); opacity: 0; }
+}
+
+@keyframes lightRay {
+  0%   { transform: rotate(0deg)   scaleX(1);    opacity: 0.3; }
+  50%  { transform: rotate(180deg) scaleX(1.5);  opacity: 0.6; }
+  100% { transform: rotate(360deg) scaleX(1);    opacity: 0.3; }
+}
+
+@keyframes goldShine {
+  0%   { transform: translateX(-200%) skewX(-15deg); }
+  100% { transform: translateX(400%)  skewX(-15deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255,183,3,0.4),  0 0 60px  rgba(114,9,183,0.3); }
+  50%       { box-shadow: 0 0 50px rgba(255,183,3,0.8),  0 0 100px rgba(114,9,183,0.6); }
+}
+
+@keyframes curtainUp {
+  0%   { transform: translateY(0%);   }
+  100% { transform: translateY(-100%); }
+}
+
+@keyframes smokeDrift {
+  0%   { transform: translateY(0px)  scale(1);   opacity: 0;   }
+  30%  { opacity: 0.4; }
+  100% { transform: translateY(-80px) scale(2);  opacity: 0;   }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0;   transform: scale(0) rotate(0deg);   }
+  50%       { opacity: 1;   transform: scale(1) rotate(180deg); }
+}
+
+.animate-gold-shine {
+  animation: goldShine 2s ease-in-out infinite;
+}
+.animate-pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+.animate-sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+.animate-float-particle {
+  animation: floatParticle 3s ease-out infinite;
+}
+.animate-smoke {
+  animation: smokeDrift 4s ease-out infinite;
+}
+.animate-light-ray {
+  animation: lightRay 8s linear infinite;
+}
