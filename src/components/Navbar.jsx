@@ -12,7 +12,16 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 md:px-8 pointer-events-none">
+    <>
+      {/* Mobile Menu Backdrop Overlay */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden transition-opacity"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+      
+      <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 md:px-8 pointer-events-none">
       <nav className="relative w-full max-w-7xl bg-white rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-purple-100 overflow-visible pointer-events-auto">
         <div className="container mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -96,6 +105,7 @@ const Navbar = () => {
       </div>
       </nav>
     </div>
+    </>
   );
 };
 
