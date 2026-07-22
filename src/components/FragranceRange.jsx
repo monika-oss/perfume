@@ -27,26 +27,32 @@ const FragranceRange = () => {
   const categories = [
     {
       title: "Floral Fragrances",
+      description: "A beautifully crafted collection of sweet and romantic luxury perfumes inspired by nature's finest blooming flowers.",
       items: ["Rose", "Jasmine", "Lavender", "Lily", "Mogra", "Lotus"]
     },
     {
       title: "Fruity Fragrances",
+      description: "Vibrant and refreshing premium fragrances bursting with juicy citrus and sweet tropical fruit notes for a lively aura.",
       items: ["Lemon", "Orange", "Apple", "Pineapple", "Mango", "Strawberry"]
     },
     {
       title: "Woody Fragrances",
+      description: "Deep, earthy, and sophisticated perfumes featuring rich notes of sandalwood, musk, and premium aged oudh.",
       items: ["Sandal", "Cedarwood", "Musk", "Amber", "Oudh", "Patchouli"]
     },
     {
       title: "Fresh Fragrances",
+      description: "Crisp and energizing long-lasting perfumes perfect for daily wear, featuring cool marine and minty accords.",
       items: ["Mint", "Eucalyptus", "Marine", "Green Apple", "Citrus", "Cool Water"]
     },
     {
       title: "Oriental Fragrances",
+      description: "Exotic and intense luxury fragrances blending warm spices, amber, and vanilla for a captivating and opulent scent.",
       items: ["Vanilla", "Spicy", "Bakhoor", "Ambergris", "Incense", "Oudh"]
     },
     {
       title: "Speciality Fragrances",
+      description: "Unique high-quality specialty scents for attars, room fresheners, and premium soaps crafted for lasting freshness.",
       items: ["Attar", "Deodorant", "Soap Fragrance", "Detergent Perfume", "Room Freshener", "Air Freshener"]
     }
   ];
@@ -110,6 +116,7 @@ const FragranceRange = () => {
                 <CategoryCard 
                   index={index}
                   title={category.title}
+                  description={category.description}
                   items={category.items}
                 />
               </div>

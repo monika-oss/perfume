@@ -141,6 +141,8 @@ const Hero = () => {
                     key={currentImageIndex}
                     src={carouselImages[currentImageIndex]} 
                     alt="Luxury perfume bottles from Sai Tirupati Trading Enterprises" 
+                    width="416"
+                    height="416"
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 1.05 }}

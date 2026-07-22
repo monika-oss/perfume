@@ -7,6 +7,7 @@ import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
 const FragranceRange = lazy(() => import('./components/FragranceRange'));
 const IdealFor = lazy(() => import('./components/IdealFor'));
 const Features = lazy(() => import('./components/Features'));
+const FAQ = lazy(() => import('./components/FAQ'));
 const Footer = lazy(() => import('./components/Footer'));
 
 import AOS from 'aos';
@@ -68,6 +69,7 @@ function App() {
               <Features />
               <FragranceRange />
               <IdealFor />
+              <FAQ />
             </Suspense>
           </main>
           <Suspense fallback={<div>Loading footer...</div>}>

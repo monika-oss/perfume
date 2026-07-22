@@ -12,7 +12,7 @@ const getCategoryImage = (title) => {
   return '/images/speciality_fragrance.webp'; // Specialty Fragrances
 };
 
-const CategoryCard = ({ title, items, index }) => {
+const CategoryCard = ({ title, description, items, index }) => {
   const imgSrc = getCategoryImage(title);
   const cardRef = useRef(null);
 
@@ -47,8 +47,13 @@ const CategoryCard = ({ title, items, index }) => {
           />
         </div>
         
-        {/* Features List */}
+        {/* Features List and Description */}
         <div className="w-full sm:w-1/2 flex flex-col justify-center py-2">
+          {description && (
+            <p className="text-xs md:text-sm text-slate-600 mb-3 leading-relaxed font-medium">
+              {description}
+            </p>
+          )}
           <motion.ul 
             initial="hidden"
             whileInView="visible"
