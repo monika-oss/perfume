@@ -88,8 +88,13 @@ const Hero = () => {
 
             {/* Smooth Title */}
             <motion.div variants={itemVariants} className="text-center lg:text-left mb-5 w-full">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight font-serif leading-[1.05] drop-shadow-2xl">
-                Premium Perfumes by Sai Tirupati Trading Enterprises
+              <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-1 sm:gap-2">
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] leading-[1.05]">
+                  Premium Perfumes
+                </span>
+                <span className="text-base sm:text-lg md:text-2xl font-medium text-white/90 tracking-wide font-sans uppercase mt-1">
+                  by Sai Tirupati Trading Enterprises
+                </span>
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl font-light text-white/80 tracking-[0.2em] mt-2 uppercase">
                 Long-lasting Luxury Perfumes
