@@ -44,7 +44,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden min-h-screen pt-24 md:pt-28 pb-10" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
+    <section className="relative flex items-center justify-center overflow-hidden min-h-screen pt-20 md:pt-24 pb-4" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
       
       {/* Gentle Floating Orbs for depth */}
       <motion.div 
@@ -70,7 +70,7 @@ const Hero = () => {
       <div className="absolute inset-0 pointer-events-none opacity-[0.04] mix-blend-overlay" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\'/%3E%3C/svg%3E")'}}></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
           
           {/* Left Text & Brand Presentation */}
           <motion.div 
@@ -87,26 +87,26 @@ const Hero = () => {
             </motion.div>
 
             {/* Smooth Title */}
-            <motion.div variants={itemVariants} className="text-center lg:text-left mb-4 w-full">
+            <motion.div variants={itemVariants} className="text-center lg:text-left mb-3 w-full">
               <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-1">
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[1.05]">
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] leading-[1.05]">
                   Premium Perfumes
                 </span>
-                <span className="text-base sm:text-lg md:text-xl font-medium text-white/90 tracking-wide font-sans uppercase mt-1">
+                <span className="text-sm sm:text-base md:text-xl font-medium text-white/90 tracking-wide font-sans uppercase mt-0">
                   by Sai Tirupati Trading Enterprises
                 </span>
               </h1>
-              <h2 className="text-sm sm:text-base md:text-lg font-light text-white/80 tracking-[0.2em] mt-2 uppercase">
+              <h2 className="text-xs sm:text-sm md:text-base font-light text-white/80 tracking-[0.2em] mt-1 uppercase">
                 Long-lasting Luxury Perfumes
               </h2>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="mb-8 text-white/60 font-normal leading-relaxed max-w-lg text-sm sm:text-base">
+            <motion.div variants={itemVariants} className="mb-5 text-white/60 font-normal leading-relaxed max-w-lg text-sm sm:text-base">
               Experience the pinnacle of luxury with our meticulously crafted premium perfumes. Discover enduring fragrances created with the world's finest ingredients.
             </motion.div>
 
             {/* Elegant Buttons */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-0">
               <a href="#fragrance-range" className="group relative overflow-hidden px-8 py-3.5 bg-brand-gold text-black font-bold text-xs md:text-sm uppercase tracking-widest text-center transition-all hover:bg-white rounded-full">
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Explore Collection
@@ -121,7 +121,7 @@ const Hero = () => {
 
           {/* Right Side: Smooth Floating Image */}
           <motion.div 
-            className="flex-1 w-full max-w-sm lg:max-w-md relative flex items-center justify-center mt-10 lg:mt-0"
+            className="flex-1 w-full max-w-xs sm:max-w-sm lg:max-w-[22rem] xl:max-w-[26rem] relative flex items-center justify-center mt-6 lg:mt-0"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1], delay: 0.3 }}
