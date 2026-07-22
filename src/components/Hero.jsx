@@ -44,7 +44,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden min-h-[calc(100vh+3rem)] pt-20 md:pt-24 pb-12" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
+    <section className="relative flex items-center justify-center overflow-hidden min-h-[calc(100vh+3rem)] pt-32 md:pt-28 lg:pt-24 pb-12" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
       
       {/* Gentle Floating Orbs for depth */}
       <motion.div 
@@ -88,25 +88,25 @@ const Hero = () => {
 
             {/* Smooth Title */}
             <motion.div variants={itemVariants} className="text-center lg:text-left mb-4 w-full">
-              <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-2 sm:gap-3">
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] leading-[1.05]">
+              <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-1 sm:gap-2 lg:gap-3">
+                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-[4rem] lg:leading-[1.05]">
                   Premium Perfumes
                 </span>
-                <span className="text-sm sm:text-base md:text-xl font-medium text-white/90 tracking-wide font-sans uppercase mt-1">
+                <span className="text-xs sm:text-base md:text-xl font-medium text-white/90 tracking-wide font-sans uppercase mt-1 lg:mt-2">
                   by Sai Tirupati Trading Enterprises
                 </span>
               </h1>
-              <h2 className="text-xs sm:text-sm md:text-base font-light text-white/80 tracking-[0.2em] mt-3 uppercase">
+              <h2 className="text-[10px] sm:text-sm md:text-base font-light text-white/80 tracking-[0.2em] mt-2 sm:mt-3 uppercase">
                 Long-lasting Luxury Perfumes
               </h2>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="mb-8 mt-4 text-white/60 font-normal leading-relaxed max-w-lg text-sm sm:text-base">
+            <motion.div variants={itemVariants} className="mb-6 mt-3 sm:mb-8 sm:mt-4 text-white/60 font-normal leading-relaxed max-w-lg text-xs sm:text-base px-2 sm:px-0">
               Experience the pinnacle of luxury with our meticulously crafted premium perfumes. Discover enduring fragrances created with the world's finest ingredients.
             </motion.div>
 
             {/* Elegant Buttons */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto mt-2 px-4 sm:px-0">
               <a href="#fragrance-range" className="group relative overflow-hidden px-8 py-3.5 bg-brand-gold text-black font-bold text-xs md:text-sm uppercase tracking-widest text-center transition-all hover:bg-white rounded-full">
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Explore Collection
@@ -121,7 +121,7 @@ const Hero = () => {
 
           {/* Right Side: Smooth Floating Image */}
           <motion.div 
-            className="flex-1 w-full max-w-xs sm:max-w-sm lg:max-w-[22rem] xl:max-w-[26rem] relative flex items-center justify-center mt-6 lg:mt-0"
+            className="flex-1 w-full max-w-[16rem] sm:max-w-sm lg:max-w-[22rem] xl:max-w-[26rem] relative flex items-center justify-center mt-6 lg:mt-0 mx-auto"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1], delay: 0.3 }}
