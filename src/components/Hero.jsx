@@ -44,7 +44,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden pt-32 md:pt-40 pb-20" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
+    <section className="relative flex items-center justify-center overflow-hidden min-h-screen pt-24 md:pt-28 pb-10" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
       
       {/* Gentle Floating Orbs for depth */}
       <motion.div 
@@ -70,7 +70,7 @@ const Hero = () => {
       <div className="absolute inset-0 pointer-events-none opacity-[0.04] mix-blend-overlay" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\'/%3E%3C/svg%3E")'}}></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
           
           {/* Left Text & Brand Presentation */}
           <motion.div 
@@ -80,28 +80,28 @@ const Hero = () => {
             animate="visible"
           >
             {/* Elegant Badge */}
-            <motion.div variants={itemVariants} className="mb-6 flex items-center gap-3">
+            <motion.div variants={itemVariants} className="mb-4 flex items-center gap-3">
               <div className="h-[1px] w-8 bg-brand-gold"></div>
               <span className="text-brand-gold text-xs sm:text-sm font-bold tracking-[0.25em] uppercase">Premium Collection</span>
               <div className="h-[1px] w-8 bg-brand-gold md:hidden"></div>
             </motion.div>
 
             {/* Smooth Title */}
-            <motion.div variants={itemVariants} className="text-center lg:text-left mb-5 w-full">
-              <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-1 sm:gap-2">
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] leading-[1.05]">
+            <motion.div variants={itemVariants} className="text-center lg:text-left mb-4 w-full">
+              <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-1">
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[1.05]">
                   Premium Perfumes
                 </span>
-                <span className="text-base sm:text-lg md:text-2xl font-medium text-white/90 tracking-wide font-sans uppercase mt-1">
+                <span className="text-base sm:text-lg md:text-xl font-medium text-white/90 tracking-wide font-sans uppercase mt-1">
                   by Sai Tirupati Trading Enterprises
                 </span>
               </h1>
-              <h2 className="text-lg sm:text-xl md:text-2xl font-light text-white/80 tracking-[0.2em] mt-2 uppercase">
+              <h2 className="text-sm sm:text-base md:text-lg font-light text-white/80 tracking-[0.2em] mt-2 uppercase">
                 Long-lasting Luxury Perfumes
               </h2>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="mb-10 text-white/60 font-normal leading-relaxed max-w-lg text-lg">
+            <motion.div variants={itemVariants} className="mb-8 text-white/60 font-normal leading-relaxed max-w-lg text-sm sm:text-base">
               Experience the pinnacle of luxury with our meticulously crafted premium perfumes. Discover enduring fragrances created with the world's finest ingredients.
             </motion.div>
 
