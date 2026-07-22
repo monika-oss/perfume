@@ -61,13 +61,13 @@ function App() {
       {!isLoading && (
         <>
           <Navbar />
-          <Hero />
-          <Features />
-          <FragranceRange />
-          <IdealFor />
-          <div id="contact">
-            <Footer />
-          </div>
+          <main>
+            <Hero />
+            <Features />
+            <FragranceRange />
+            <IdealFor />
+          </main>
+          <Footer />
         </>
       )}
     </div>

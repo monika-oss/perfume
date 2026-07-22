@@ -44,7 +44,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center overflow-hidden pt-32 md:pt-40 pb-20" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
+    <section className="relative flex items-center justify-center overflow-hidden pt-32 md:pt-40 pb-20" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
       
       {/* Gentle Floating Orbs for depth */}
       <motion.div 
@@ -89,10 +89,10 @@ const Hero = () => {
             {/* Smooth Title */}
             <motion.div variants={itemVariants} className="text-center lg:text-left mb-5 w-full">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight font-serif leading-[1.05] drop-shadow-2xl">
-                SAI TIRUPATI
+                Premium Perfumes by Sai Tirupati Trading Enterprises
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl font-light text-white/80 tracking-[0.2em] mt-2 uppercase">
-                Trading Enterprises
+                Long-lasting Luxury Perfumes
               </h2>
             </motion.div>
 
@@ -135,7 +135,7 @@ const Hero = () => {
                   <motion.img 
                     key={currentImageIndex}
                     src={carouselImages[currentImageIndex]} 
-                    alt="Sai Tirupati Premium Perfumes" 
+                    alt="Luxury perfume bottles from Sai Tirupati Trading Enterprises" 
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 1.05 }}
@@ -149,7 +149,7 @@ const Hero = () => {
 
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

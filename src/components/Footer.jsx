@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className="bg-brand-purple-dark text-white relative">
+    <footer id="contact" className="bg-brand-purple-dark text-white relative">
       
       {/* Top Gold Border (Wavy Accent style) */}
       <div className="h-2 w-full bg-gradient-to-r from-brand-gold-light via-brand-gold to-brand-gold-dark relative z-20"></div>
