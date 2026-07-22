@@ -44,7 +44,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden min-h-screen pt-20 md:pt-24 pb-4" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
+    <section className="relative flex items-center justify-center overflow-hidden min-h-screen pt-20 md:pt-24 pb-16 md:pb-28" style={{background: 'linear-gradient(135deg, #3a0ca3 0%, #7209b7 40%, #c026d3 75%, #f15bb5 100%)'}}>
       
       {/* Gentle Floating Orbs for depth */}
       <motion.div 
