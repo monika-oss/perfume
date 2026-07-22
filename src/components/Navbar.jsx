@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           
           {/* Logo & Brand */}
-          <a href="#" className="flex items-center gap-2 md:gap-3">
+          <a href="/" aria-label="Sai Tirupati Homepage" className="flex items-center gap-2 md:gap-3">
             <img 
               src="/images/logo.webp" 
               alt="Sai Tirupati Logo" 
@@ -58,6 +58,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center">
             <a 
               href="tel:9345315579" 
+              aria-label="Call Us at 9345315579"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-purple to-brand-pink-dark text-white font-bold py-2.5 px-5 rounded-full text-sm shadow-md hover:shadow-[0_4px_15px_rgba(114,9,183,0.3)] transition-all hover:-translate-y-0.5"
             >
               <Phone className="w-4 h-4" />
@@ -69,6 +70,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
+              aria-label="Toggle mobile menu"
               className="text-slate-700 hover:text-brand-purple transition-colors p-1"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
