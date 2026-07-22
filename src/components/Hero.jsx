@@ -87,26 +87,26 @@ const Hero = () => {
             </motion.div>
 
             {/* Smooth Title */}
-            <motion.div variants={itemVariants} className="text-center lg:text-left mb-3 w-full">
-              <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-1">
+            <motion.div variants={itemVariants} className="text-center lg:text-left mb-4 w-full">
+              <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-2 sm:gap-3">
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] leading-[1.05]">
                   Premium Perfumes
                 </span>
-                <span className="text-sm sm:text-base md:text-xl font-medium text-white/90 tracking-wide font-sans uppercase mt-0">
+                <span className="text-sm sm:text-base md:text-xl font-medium text-white/90 tracking-wide font-sans uppercase mt-1">
                   by Sai Tirupati Trading Enterprises
                 </span>
               </h1>
-              <h2 className="text-xs sm:text-sm md:text-base font-light text-white/80 tracking-[0.2em] mt-1 uppercase">
+              <h2 className="text-xs sm:text-sm md:text-base font-light text-white/80 tracking-[0.2em] mt-3 uppercase">
                 Long-lasting Luxury Perfumes
               </h2>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="mb-5 text-white/60 font-normal leading-relaxed max-w-lg text-sm sm:text-base">
+            <motion.div variants={itemVariants} className="mb-8 mt-4 text-white/60 font-normal leading-relaxed max-w-lg text-sm sm:text-base">
               Experience the pinnacle of luxury with our meticulously crafted premium perfumes. Discover enduring fragrances created with the world's finest ingredients.
             </motion.div>
 
             {/* Elegant Buttons */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-0">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2">
               <a href="#fragrance-range" className="group relative overflow-hidden px-8 py-3.5 bg-brand-gold text-black font-bold text-xs md:text-sm uppercase tracking-widest text-center transition-all hover:bg-white rounded-full">
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Explore Collection
