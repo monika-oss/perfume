@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: "Home", href: "#" },
+    { label: "Home", href: "/" },
     { label: "Fragrance Range", href: "#fragrance-range" },
     { label: "Ideal For", href: "#ideal-for" },
     { label: "Contact", href: "#contact" }
@@ -13,7 +13,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Mobile Menu Backdrop Overlay */}
       {isOpen && (
         <div 
           className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden transition-opacity"
@@ -26,8 +25,7 @@ const Navbar = () => {
         <div className="container mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           
-          {/* Logo & Brand */}
-          <a href="#" className="flex items-center gap-2 md:gap-3">
+          <a href="/" aria-label="Sai Tirupati Homepage" className="flex items-center gap-2 md:gap-3">
             <img 
               src="/images/logo.png" 
               alt="Sai Tirupati Logo" 
@@ -40,7 +38,6 @@ const Navbar = () => {
             </div>
           </a>
 
-          {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-2 lg:gap-8">
             {navLinks.map((link, index) => (
               <a 
@@ -54,10 +51,10 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Desktop CTA Call Button */}
           <div className="hidden md:flex items-center">
             <a 
               href="tel:9345315579" 
+              aria-label="Call Us at 9345315579"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-purple to-brand-pink-dark text-white font-bold py-2.5 px-5 rounded-full text-sm shadow-md hover:shadow-[0_4px_15px_rgba(114,9,183,0.3)] transition-all hover:-translate-y-0.5"
             >
               <Phone className="w-4 h-4" />
@@ -65,10 +62,10 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
+              aria-label="Toggle mobile menu"
               className="text-slate-700 hover:text-brand-purple transition-colors p-1"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -77,7 +74,6 @@ const Navbar = () => {
 
         </div>
 
-        {/* Mobile Dropdown Menu */}
         {isOpen && (
           <div className="md:hidden absolute top-[calc(100%+0.5rem)] left-0 right-0 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] p-5 border border-purple-100 flex flex-col space-y-2 z-50">
             {navLinks.map((link, index) => (
