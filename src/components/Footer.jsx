@@ -17,7 +17,7 @@ const Footer = () => {
           className="relative w-full h-full flex items-end justify-end"
         >
           <img 
-            src="/images/footer_perfumes_v8.png" 
+            src="/images/footer_perfumes_v8.webp" 
             alt="Perfume Bottles and Flower" 
             className="w-full h-auto object-contain object-bottom drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]"
           />

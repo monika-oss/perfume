@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Hero = () => {
   const carouselImages = [
-    '/images/carousel_1.png',
-    '/images/carousel_2.png',
-    '/images/carousel_3.png'
+    '/images/carousel_1.webp',
+    '/images/carousel_2.webp',
+    '/images/carousel_3.webp'
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

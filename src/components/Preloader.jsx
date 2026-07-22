@@ -43,7 +43,7 @@ const Preloader = ({ onComplete }) => {
           className="bg-white p-3 md:p-4 rounded-full shadow-[0_0_30px_rgba(255,183,3,0.2)]"
         >
           <img 
-            src="/images/logo.png" 
+            src="/images/logo.webp" 
             alt="Logo" 
             className="w-16 h-16 md:w-20 md:h-20 object-contain mix-blend-multiply"
           />
