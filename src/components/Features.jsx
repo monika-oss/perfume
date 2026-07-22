@@ -11,7 +11,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="relative z-20 mb-12 px-4 pt-8" style={{ perspective: "1000px" }}>
+    <div className="relative z-20 -mt-10 mb-12 px-4" style={{ perspective: "1000px" }}>
       <motion.div
         animate={{ y: [0, -8, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
