@@ -1,12 +1,13 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import FragranceRange from './components/FragranceRange';
-import IdealFor from './components/IdealFor';
-import Features from './components/Features';
-import Footer from './components/Footer';
 import Preloader from './components/Preloader';
 import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
+
+const FragranceRange = lazy(() => import('./components/FragranceRange'));
+const IdealFor = lazy(() => import('./components/IdealFor'));
+const Features = lazy(() => import('./components/Features'));
+const Footer = lazy(() => import('./components/Footer'));
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -63,11 +64,15 @@ function App() {
           <Navbar />
           <main>
             <Hero />
-            <Features />
-            <FragranceRange />
-            <IdealFor />
+            <Suspense fallback={<div className="h-20 flex items-center justify-center">Loading...</div>}>
+              <Features />
+              <FragranceRange />
+              <IdealFor />
+            </Suspense>
           </main>
-          <Footer />
+          <Suspense fallback={<div>Loading footer...</div>}>
+            <Footer />
+          </Suspense>
         </>
       )}
     </div>
