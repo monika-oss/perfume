@@ -42,7 +42,7 @@ const CategoryCard = ({ title, description, items, index }) => {
         <div className="w-full sm:w-1/2 h-36 sm:h-auto flex items-center justify-center overflow-hidden rounded-lg border border-purple-100 bg-white">
           <img 
             src={imgSrc} 
-            alt={title} 
+            alt={`Premium ${title} Fragrance - Sai Tirupati Perfumes`} 
             className="w-full h-full object-contain transform hover:scale-110 transition-transform duration-300 p-2"
           />
         </div>

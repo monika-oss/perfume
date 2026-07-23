@@ -68,7 +68,7 @@ const Features = () => {
               >
                 <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-brand-purple drop-shadow-md" />
               </motion.div>
-              <span>{feature}</span>
+              <h3 className="m-0 leading-none">{feature}</h3>
             </motion.div>
           ))}
         </motion.div>

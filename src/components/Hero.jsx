@@ -90,19 +90,19 @@ const Hero = () => {
             <motion.div variants={itemVariants} className="text-center lg:text-left mb-4 w-full">
               <h1 className="font-black text-white tracking-tight font-serif drop-shadow-2xl flex flex-col gap-1 sm:gap-2 lg:gap-3">
                 <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-[4rem] lg:leading-[1.05]">
-                  Premium Perfumes
+                  Buy Premium Luxury Perfumes Online
                 </span>
                 <span className="text-xs sm:text-base md:text-xl font-medium text-white/90 tracking-wide font-sans uppercase mt-1 lg:mt-2">
                   by Sai Tirupati Trading Enterprises
                 </span>
               </h1>
               <h2 className="text-[10px] sm:text-sm md:text-base font-light text-white/80 tracking-[0.2em] mt-2 sm:mt-3 uppercase">
-                Long-lasting Luxury Perfumes
+                Best Long-lasting Fragrances for Men & Women in India
               </h2>
             </motion.div>
 
             <motion.div variants={itemVariants} className="mb-6 mt-3 sm:mb-8 sm:mt-4 text-white/60 font-normal leading-relaxed max-w-lg text-xs sm:text-base px-2 sm:px-0">
-              Experience the pinnacle of luxury with our meticulously crafted premium perfumes. Discover enduring fragrances created with the world's finest ingredients.
+              Experience the pinnacle of luxury with our meticulously crafted premium perfumes. Discover affordable, enduring fragrances created with the world's finest ingredients. Perfect for gifting or daily wear.
             </motion.div>
 
             {/* Elegant Buttons */}
