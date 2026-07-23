@@ -143,6 +143,8 @@ const Hero = () => {
                     alt="Luxury perfume bottles from Sai Tirupati Trading Enterprises" 
                     width="416"
                     height="416"
+                    fetchpriority={currentImageIndex === 0 ? "high" : "auto"}
+                    loading={currentImageIndex === 0 ? "eager" : "lazy"}
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 1.05 }}
