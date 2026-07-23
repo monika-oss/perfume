@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const Preloader = ({ onComplete }) => {
   useEffect(() => {
-    // A simple 2-second loader
+    // Reduced artificial loader time to drastically improve performance score
     const timer = setTimeout(() => {
       onComplete();
-    }, 2000); 
+    }, 500); 
     return () => clearTimeout(timer);
   }, [onComplete]);
 
