@@ -14,8 +14,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -24,21 +22,11 @@ function App() {
   });
 
   useEffect(() => {
-    // Prevent scrolling during preloader
-    if (isLoading) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-      AOS.init({
-        duration: 600,
-        once: true,
-        easing: 'ease-out-back',
-      });
-    }
-  }, [isLoading]);
-
-  const handlePreloaderComplete = useCallback(() => {
-    setIsLoading(false);
+    AOS.init({
+      duration: 600,
+      once: true,
+      easing: 'ease-out-back',
+    });
   }, []);
 
   return (
