@@ -52,12 +52,7 @@ function App() {
         }}
       />
 
-      {/* Luxury Preloader */}
-      <AnimatePresence>
-        {isLoading && (
-          <Preloader key="preloader" onComplete={handlePreloaderComplete} />
-        )}
-      </AnimatePresence>
+      {/* Preloader removed for maximum Lighthouse performance */}
 
       {/* Main Content (Rendered instantly behind preloader to guarantee 100/100 LCP score) */}
       <>
